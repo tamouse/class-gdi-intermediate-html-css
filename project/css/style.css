@@ -1,1 +1,33 @@
 /* GDI DevelopIt! Intermediate HTML & CSS */
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px auto;
+    min-width: 100%;
+}
+
+p {
+    display: inline-block;
+    max-width: 45%;
+}
+
+span {
+    color: #FF0000;
+    display: block;
+}
+
+aside.left-side {
+    float: left;
+    max-width: 15%;
+}
+
+aside.right-side {
+    float: right;
+    max-width: 15%;
+}
+
+main {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px auto;
+}
