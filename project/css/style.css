@@ -19,11 +19,13 @@ span {
 aside.left-side {
     float: left;
     max-width: 15%;
+    padding-right: 10px;
 }
 
 aside.right-side {
     float: right;
     max-width: 15%;
+    padding-left: 10px;
 }
 
 main {
