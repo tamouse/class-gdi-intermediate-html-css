@@ -6,11 +6,6 @@
     min-width: 100%;
 }
 
-p {
-    display: inline-block;
-    max-width: 45%;
-}
-
 span {
     color: #FF0000;
     display: block;
@@ -26,6 +21,11 @@ aside.right-side {
     float: right;
     max-width: 15%;
     padding-left: 10px;
+    clear: both;
+}
+
+.left-side ul, .right-side ul {
+    list-style-type: none;
 }
 
 main {
