@@ -1,0 +1,32 @@
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+a {
+	color: #353467;
+}
+a:hover {
+	color: #E1017F;
+}
+
+/* Descendent Selector */
+.nav-main ul li {
+	padding-bottom: 20px;
+}
+
+/* Child Selector */
+div > p {
+	background-color: #ff0000;
+	color: #fff;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+	border-bottom: 2px dotted #000000;
+}
+
+/* General Sibling Selector */
+h2 ~ h6 {
+	border: 5px solid #000;
+	font-size: 14px;
+}

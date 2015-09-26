@@ -1,0 +1,20 @@
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.logo {
+
+}
+.social {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.content {
+	position: static;
+}
+.live-chat {
+	position: fixed;
+	top: 50vh;
+	left: 0;
+}

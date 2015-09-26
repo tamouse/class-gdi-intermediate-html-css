@@ -1,0 +1,20 @@
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.one {
+	width: 200px;
+	float: left;
+}
+.two {
+	width: 600px;
+	float: left;
+}
+.three {
+	width: 800px;
+	float: right;
+}
+.four {
+	width: 100px;
+	float: left;
+}

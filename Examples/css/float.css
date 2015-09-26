@@ -1,0 +1,16 @@
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.content {
+	float: left;
+	width: 660px;
+}
+.sidebar {
+	float: right;
+	width: 300px;
+}
+
+.sidebar ul {
+	list-style-type: none;
+}

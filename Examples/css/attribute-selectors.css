@@ -1,0 +1,31 @@
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+a {
+	color: #353467;
+}
+a:hover {
+	color: #E1017F;
+}
+a[target="_blank"] {
+    color: #ff0000;
+}
+
+/*Social Nav Items*/
+.social li {
+	display: inline-block;
+	padding: 0 5px;
+}
+.social li a {
+	font-size: 20px;
+}
+a[href*="facebook"] {
+	color: #44619D;
+}
+a[href*="twitter"] {
+	color: #55B4F1;
+}
+a[href*="linkedin"] {
+	color: #1D87BE;
+}
