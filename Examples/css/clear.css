@@ -1,20 +1,27 @@
 .container {
-	width: 960px;
-	margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
 .one {
-	width: 200px;
-	float: left;
+    margin: 0;
+    width: 200px;
 }
 .two {
-	width: 600px;
-	float: left;
+    margin: 0;
+    width: 600px;
 }
 .three {
-	width: 800px;
-	float: right;
+    margin: 0;
+    width: 800px;
 }
 .four {
-	width: 100px;
-	float: left;
+    margin: 0;
+    width: 100px;
 }
+
+.fr { float: right; }
+.fl { float: left; }
+.fnone { float: none; }
+.clear-left { clear: left; }
+.clear-right { clear: right; }
+.clear-both { clear: both;}
