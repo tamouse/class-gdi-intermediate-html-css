@@ -1,19 +1,48 @@
 /* General Styles */
-body {
-
+html {
+    /* font-family: "Open Sans", sans-serif; */
 }
+
+div {margin: 0; padding: 0;}
+body {
+}
+
+.bg-image {
+    background: url("/images/banner-bg.jpg") no-repeat fixed center center / cover;
+}
+
+.bg-mask {
+    background-color: rgba(255,255,255,0.6)
+}
+
+.block-body {
+    margin: 0;
+    padding: 0;
+    background: #fcfcfc;
+}
+.show-body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
 p {
 
 }
 a {
-
+    text-decoration: none;
 }
 a:hover {
-
+    text-decoration: underline;
 }
 a:active {
-
+o    text-decoration: underline;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: "Rubato", sans-serif; */
+}
+
 h1 {
 
 }
@@ -42,21 +71,46 @@ header {
 
 }
 
+.nav-main ul {
+    display: inline-block;
+    list-style-type: none;
+}
+.nav-main ul li {
+    display: inline;
+}
+.nav-main ul li:after {
+    content: "|";
+    padding: 5px;
+}
+.nav-main ul li:last-child:after {
+    content: "";
+    padding: 5px;
+}
+
 .logo {
 	width: 300px;
-	float: left;
+	/* float: left; */
+	display: inline-block;
+	font-weight: 900;
+	font-size: 200%;
+}
+
+.logo a {
+    color: teal;
 }
 
 /*Setup a Container for Multi-Use*/
 .container {
 	width: 960px;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 /* Section: Banner + Feature */
 .banner {
-	background: url("http://placehold.it/1500x300") no-repeat scroll center center / cover;
-	min-height: 250px;
+    /* background: url("/images/banner-bg.jpg") no-repeat scroll center center / cover; */
+    background: transparent;
+    min-height: 250px;
 }
 
 .feature {
@@ -70,22 +124,28 @@ header {
 
 main {
 	background-color: aqua;
-	float: left;
-	width: 630px;
+	/* float: left; */
+	display: inline-block;
+	width: 60%;
 	margin-right: 30px;
 }
 
 aside {
 	background-color: navy;
 	color: white;
-	float: right;
-	width: 300px;
+	/* float: right; */
+	display: inline-block;
+	width: 30%;
+	margin: 0 0 0 10px;
 }
 
 aside ul {
 	list-style-type: none;
 }
 
+aside ul li {
+    display: inline;
+}
 
 /* Section: Services */
 .services {
@@ -97,7 +157,8 @@ aside ul {
 	color: #fff;
 	width: 290px;
 	margin-right: 30px;
-	float: left;
+	/* float: left; */
+	display: inline-block;
 }
 
 .box:last-child {
@@ -106,6 +167,8 @@ aside ul {
 
 /* Footer */
 footer {
+    margin: 0;
+    padding: 0;
 	clear: both;
 	background: olive;
 }
