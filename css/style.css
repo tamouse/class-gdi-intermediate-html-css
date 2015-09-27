@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300|Oswald);
 
-
-
-
 /* General Styles */
 html {
     font-family: 'Open Sans', sans-serif;
@@ -57,6 +54,7 @@ h4, h5, h6 { font-size: 100%; }
 /* Header */
 header {
     box-shadow: inset 8px 8px 8px teal, inset -8px -8px 8px white;
+    padding-top: 8px;
 }
 
 button {
@@ -84,6 +82,9 @@ button {
 .nav-main ul li:last-child:after {
     content: "";
     padding: 5px;
+}
+.nav-main ul li a {
+    color: teal;
 }
 
 .logo {
@@ -161,6 +162,9 @@ footer ul {
 }
 footer ul li {
     display: inline;
+}
+footer ul li a {
+    color: #fcfcfc;
 }
 
 .copyright {
