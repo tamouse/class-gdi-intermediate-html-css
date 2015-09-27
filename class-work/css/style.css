@@ -12,7 +12,7 @@ body {
 }
 
 .bg-image {
-    background: url("{{site.baseurl}}/images/banner-bg-iss.jpg") no-repeat fixed center center / cover;
+    background: url("{{site.baseurl}}/images/banner-bg-iss-300.jpg") no-repeat fixed center center / cover;
 }
 
 .bg-mask {
