@@ -21,7 +21,7 @@
 	    <div class="container">
 	      <nav class="nav-main">
 		<div class="logo">
-		  <h1><a href="index.html">Company ABC</a></h1>
+		  <h1><a href="index.html">{{site.company}}</a></h1>
 		</div>
 		<ul>
 		  <li><a href="#">Home</a></li>
@@ -37,10 +37,14 @@
 	  <div class="feature">
 	    <div class="container">
 	      <div class="feature-box">
-		<h2>Fusce ultrices fringilla metus</h2>
-		<h3>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</h3>
-		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
-		<a href="#"><button>Etiam posuere</button></a>
+		<h2>Here men from the planet Earth first set foot upon the Moon.</h2>
+		<h3> July 1969 AD. We came in peace for all mankind.</h3>
+		<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+
+As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore &hellip; and this is exploration at its greatest.
+
+The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
+		<a href="#"><button>Read more</button></a>
 	      </div>
 	    </div><!--.container-->
 	  </div>
@@ -58,34 +62,37 @@
 
 	  <section class="content">
 	    <div class="container">
+	      <aside>
+		<img src="{{site.baseurl}}/images/place-shuttle-300.jpg">
+	      </aside>
+
 	      <main>
-		<h3>Content Title</h3>
-		<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-		<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-		<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+		<h3>Where ignorance lurks, so too do the frontiers of discovery and imagination.</h3>
+		<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+
+		<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+
+		<p>If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.</p>
 	      </main>
 
-	      <aside>
-		<img src="{{site.baseurl}}/images/placeholder300x200.jpg">
-	      </aside>
 	    </div><!--.container-->
 	  </section>
 
 	  <section class="services">
 	    <div class="container">
 	      <div class="box">
-		<h3>Magna Cras Bibendum Mattis</h3>
-		<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+		<h3>Planetary Science</h3>
+		<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest.</p>
 		<a href="#"><button>Read More</button></a>
 	      </div>
 	      <div class="box">
-		<h3>Magna Parturient Dapibus</h3>
-		<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+		<h3>Deep Space Exploration</h3>
+		<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
 		<a href="#"><button>Read More</button></a>
 	      </div>
 	      <div class="box">
-		<h3>Pharetra Aenean Ullamcorper Euismod</h3>
-		<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+		<h3>Heavy Lifting</h3>
+		<p>The sky is the limit only for those who aren't afraid to fly!</p>
 		<a href="#"><button>Read More</button></a>
 	      </div>
 	    </div><!--.container-->
@@ -102,12 +109,12 @@
 	  <footer>
 	    <div class="container">
 	      <h2>Get in Touch</h2>
-	      <h4>Phasellus nec erat sit amet nibh pellentesque congue</h4>
 	      <ul>
-		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://github.com/{{site.github_username}}/" target="_blank" title="tamouse @ github"><i class="fa fa-github"></i></a></li>
+		<li><a href="http://twitter.com/{{site.twitter_username}}" target="_blank" title="tamouse @ twitter"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" title="tamara.temple @ facebook"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/{{site.linked_in_username}}" target="_blank" title="tamaratemple @ linked-in"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://instagram.com/{{site.instagram_username}}/" target="_blank" title="tamouse @ instagram"><i class="fa fa-instagram"></i></a></li>
 	      </ul>
 	      <p class="copyright">Copyright &copy; {{site.time|date: "%F"}} Tamara Temple.</p>
 	      <p><a href="{{site.baseurl}}/colophon.html">Colophon</a></p>

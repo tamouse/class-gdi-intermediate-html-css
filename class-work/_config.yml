@@ -7,6 +7,11 @@ baseurl: "/class-gdi-intermediate-html-css" # gh-pages for repo
 url: "http://blog.tamouse.org" # the base hostname & protocol for your site
 twitter_username: tamouse
 github_username:  tamouse
+facebook_username: tamara.temple
+linked_in_username: tamaratemple
+instagram_username: tamouse
+
+company: Space
 
 # Build settings
 markdown: kramdown
