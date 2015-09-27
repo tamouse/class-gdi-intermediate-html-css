@@ -8,7 +8,7 @@ body {
 }
 
 .bg-image {
-    background: url("/images/banner-bg.jpg") no-repeat fixed center center / cover;
+    background: url("/class-gdi-intermediate-html-css/images/banner-bg.jpg") no-repeat fixed center center / cover;
 }
 
 .bg-mask {
