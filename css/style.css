@@ -1,6 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300|Oswald);
+
+
+
+
 /* General Styles */
 html {
-    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 div {margin: 0; padding: 0;}
@@ -8,11 +13,11 @@ body {
 }
 
 .bg-image {
-    background: url("/class-gdi-intermediate-html-css/images/banner-bg.jpg") no-repeat fixed center center / cover;
+    background: url("/class-gdi-intermediate-html-css/images/banner-bg-iss.jpg") no-repeat fixed center center / cover;
 }
 
 .bg-mask {
-    background-color: rgba(255,255,255,0.6)
+    /* background-color: rgba(255,255,255,0.6) */
 }
 
 .block-body {
@@ -26,7 +31,7 @@ body {
     background: transparent;
 }
 
-img { max-width: 100%; }
+img { width: 100%; height: auto; }
 p {
     padding-bottom: 0.6em;
 }
@@ -41,8 +46,7 @@ a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: "Rubato", sans-serif; */
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
     padding-bottom: 1em;
     color: teal;
 }
@@ -124,12 +128,17 @@ button {
 
 /* Secton: Content */
 .content {
+    clear: both;
+}
 
+aside {
+    text-align: center;
+    margin: 10px;
 }
 
 /* Section: Services */
 .services {
-
+    clear: both;
 }
 
 .feature-box {
@@ -187,18 +196,20 @@ footer ul li {
 	float: right;
     }
 
+
     main {
-	display: inline-block;
-	max-width: 60%;
+	/* display: inline-block; */
+	width: 60%;
 	margin-right: 30px;
 	vertical-align: top;
     }
 
     aside {
 	color: white;
-	display: inline-block;
-	max-width: 39%;
-	margin: 0 0 0 10px;
+	/* display: inline-block; */
+	float: right;
+	width: 30%;
+	margin: 0;
 	vertical-align: top;
     }
 
@@ -213,8 +224,9 @@ footer ul li {
     aside img {
 	width: 100%;
     }
-
-
+    .bg-image {
+	background: url("/class-gdi-intermediate-html-css/images/banner-bg-iss.jpg") no-repeat fixed center center / cover;
+    }
 }
 
 @media screen and (min-width:1200px) {
