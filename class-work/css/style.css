@@ -1,3 +1,5 @@
+---
+---
 /* General Styles */
 html {
     /* font-family: "Open Sans", sans-serif; */
@@ -8,7 +10,7 @@ body {
 }
 
 .bg-image {
-    background: url("/images/banner-bg.jpg") no-repeat fixed center center / cover;
+    background: url("/{{site.baseurl}}images/banner-bg.jpg") no-repeat fixed center center / cover;
 }
 
 .bg-mask {
