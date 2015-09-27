@@ -3,7 +3,7 @@ title: Intermediate HTML and CSS
 email: tamouse@gmail.com
 description: >-
   Girl Develop It! Intermediate HTML &amp; CSS class work.
-baseurl: "class-gdi-intermediate-html-css/" # gh-pages for repo
+baseurl: "/class-gdi-intermediate-html-css" # gh-pages for repo
 url: "http://blog.tamouse.org" # the base hostname & protocol for your site
 twitter_username: tamouse
 github_username:  tamouse

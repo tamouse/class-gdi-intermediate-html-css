@@ -10,7 +10,7 @@ body {
 }
 
 .bg-image {
-    background: url("/{{site.baseurl}}images/banner-bg.jpg") no-repeat fixed center center / cover;
+    background: url("{{site.baseurl}}/images/banner-bg.jpg") no-repeat fixed center center / cover;
 }
 
 .bg-mask {
@@ -28,8 +28,9 @@ body {
     background: transparent;
 }
 
+img { max-width: 100%; }
 p {
-
+    padding-bottom: 0.6em;
 }
 a {
     text-decoration: none;
@@ -38,39 +39,33 @@ a:hover {
     text-decoration: underline;
 }
 a:active {
-o    text-decoration: underline;
+    o    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
     /* font-family: "Rubato", sans-serif; */
+    font-weight: 900;
+    padding-bottom: 1em;
+    color: teal;
 }
+h1, h2, h3 { font-size: 110%; }
+h4, h5, h6 { font-size: 100%; }
 
-h1 {
-
-}
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-h5 {
-
-}
-
-h6 {
-
-}
 
 /* Header */
 header {
+    box-shadow: inset 8px 8px 8px teal, inset -8px -8px 8px white;
+}
 
+button {
+    background-color: teal;
+    border: solid 0 teal;
+    box-shadow: 2px 2px 2px grey;
+    color: #fcfcfc;
+    font-size: 110%;
+    padding: 5px;
+    margin: 3px;
+    cursor: pointer;
 }
 
 .nav-main ul {
@@ -90,11 +85,8 @@ header {
 }
 
 .logo {
-	width: 300px;
-	/* float: left; */
-	display: inline-block;
-	font-weight: 900;
-	font-size: 200%;
+    display: block;
+    font-weight: 900;
 }
 
 .logo a {
@@ -103,50 +95,38 @@ header {
 
 /*Setup a Container for Multi-Use*/
 .container {
-	width: 960px;
-	margin: 0 auto;
-	padding: 10px;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 /* Section: Banner + Feature */
 .banner {
-    /* background: url("/images/banner-bg.jpg") no-repeat scroll center center / cover; */
     background: transparent;
     min-height: 250px;
 }
 
 .feature {
-	background: gray;
+    background: teal;
 }
+.feature h1,
+.feature h2,
+.feature h3,
+.feature h4,
+.feature h5,
+.feature h6 {
+    color: #333;
+}
+.feature button {
+    border: solid 2px white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
 
 /* Secton: Content */
 .content {
 
-}
-
-main {
-	background-color: aqua;
-	/* float: left; */
-	display: inline-block;
-	width: 60%;
-	margin-right: 30px;
-}
-
-aside {
-	background-color: navy;
-	color: white;
-	/* float: right; */
-	display: inline-block;
-	width: 30%;
-	margin: 0 0 0 10px;
-}
-
-aside ul {
-	list-style-type: none;
-}
-
-aside ul li {
-    display: inline;
 }
 
 /* Section: Services */
@@ -154,27 +134,108 @@ aside ul li {
 
 }
 
-.box {
-	background: #000;
-	color: #fff;
-	width: 290px;
-	margin-right: 30px;
-	/* float: left; */
-	display: inline-block;
-}
-
-.box:last-child {
-	margin-right: 0;
+.feature-box {
+    display: inline-block;
 }
 
 /* Footer */
 footer {
     margin: 0;
     padding: 0;
-	clear: both;
-	background: olive;
+    clear: both;
+    background: teal;
+    text-align: center;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #CCC;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    display: inline;
 }
 
 .copyright {
-	text-align: center;
+    margin: 15px auto;
+    text-align: center;
+    color: #aaa;
+    font-size: 85%;
+}
+
+.box {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:900px) {
+    h1 {font-size: 200%;}
+    h2 {font-size: 180%;}
+    h3 {font-size: 150%;}
+    h4 {font-size: 120%;}
+    h5 {font-size: 110%;}
+    h6 {font-size: 100%;}
+    .box {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+    }
+    .box:last-child {
+	margin-right: 0;
+	margin-bottom: 10px;
+    }
+
+    button {
+	float: right;
+    }
+
+    main {
+	display: inline-block;
+	max-width: 60%;
+	margin-right: 30px;
+	vertical-align: top;
+    }
+
+    aside {
+	color: white;
+	display: inline-block;
+	max-width: 39%;
+	margin: 0 0 0 10px;
+	vertical-align: top;
+    }
+
+    aside ul {
+	list-style-type: none;
+    }
+
+    aside ul li {
+	display: inline;
+    }
+
+    aside img {
+	width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .logo {
+	float: left;
+	min-width: 40%;
+	font-size: 200%;
+    }
+    header {
+	clear: both;
+    }
+    .nav-main {
+	height: 100px;
+    }
+    .nav-main ul {
+	display: block;
+	list-style-type: none;
+	text-align: right;
+	font-size: 1.1em;
+    }
+
 }
